@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    minkuproject1:
+        image: minkuhttpd:v0001
+        build: .
+        container_name: minkuc1
+        ports:
+            - 1219:80
+        restart: always
